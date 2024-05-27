@@ -1,0 +1,214 @@
+*{  background-color: wheat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid gray;
+}
+header ul{
+    text-align: center;
+    margin-top: 40px;
+    list-style: none;
+    width: 100%;
+}
+header ul li{
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 0 65px;
+}
+header ul li:hover{
+    transition: .5s;
+
+    border-bottom: 1px solid rgb(68, 68, 68);
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-family: fantasy;
+}
+header ul li a:hover{
+    transition: .5s;
+    color: rgb(68, 68, 68);
+}
+@media (max-width:872px){
+    header ul li{
+        margin: 0 40px;
+    }
+}
+header #check{
+    display: none;
+}
+header label{
+    font-size: 30px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: none;
+    cursor: pointer;
+}
+@media (max-width:721px){
+    header label{
+        display: initial;
+    }
+    header ul{
+        margin-top: 100px;
+        z-index: 1000;
+        background-color: white;
+        line-height: 50px;
+        width: 300px;
+        position: fixed;
+        left: -100%;
+        text-align: left;
+        box-shadow: 3px 3px 20px gray;
+    }
+    header ul li{
+        padding: 60px;
+        height: 155px;
+        display: block;
+        margin: 0px 0px;
+    }
+    header ul li:hover{
+        transition: .5s;
+        border-bottom: none;
+    }
+    header #check:checked ~ ul {
+        left: 0;
+        transition: .5s;
+    }
+}
+
+
+section{
+    justify-content: center;
+    height: auto;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+section .box_cont{
+    border-top-left-radius: 20px;
+    padding: 10px 10px;
+    background-color: rgba(168, 106, 18, 0.673);
+    width: 700px;
+    height: 445px;
+}
+section .box_cont .box_cont2{
+    display: flex;
+    padding: 30px;
+}
+section .box_cont .box_cont2 .logo{
+    padding-right: 5px;
+    font-size: 49px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+section .box_cont .box_cont2 .name{
+    padding-left: 2px;
+    border-left: .9px solid black;
+    margin-top: 6px;
+    padding-top: 3px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-family:fantasy;
+    width: 100px;
+    
+}
+section .box_cont .text{
+    line-height: 25px;
+    padding: 30px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+section .box_img{
+    height: 445px;
+    background-color: white;
+    width: 400px;
+    padding: 10px;
+    background: url(musab3.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+
+
+footer{
+
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(62, 62, 62);
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer ul{
+    list-style: none;
+    width: 260px;
+}
+footer ul li{
+    background-color: rgb(62, 62, 62);
+    padding: 35px 0px;
+}
+footer ul li a{
+    background-color: rgb(62, 62, 62);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(173, 173, 173);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+footer ul li a:hover{
+    transition: .5s;
+    color: white;
+}
+footer .icons{
+    background-color: rgb(62, 62, 62);
+    text-align: center;
+    width: 200px;
+    margin: 210px 10px 0px 10px;
+    padding: 20px;
+}
+footer .icons a{
+    background-color: rgb(62, 62, 62);
+    padding: 0px 10px 0px 10px;
+    font-size: 25px;
+    
+}
+footer .icons a i{
+    background-color: rgb(62, 62, 62);
+    color: rgb(173, 173, 173);
+}
+footer .icons a i:hover{
+    color: white;
+    transition: .5s;
+}
+footer p{
+    color: rgb(173, 173, 173);
+    background-color: rgb(62, 62, 62);
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 210px 10px 0px 10px;
+    padding: 25px;
+}
+@media (max-width:1044px){
+    footer p{
+        margin: 20px 10px 0px 10px;
+    }
+}
+@media (max-width:561px){
+    footer .icons{
+        margin: 20px 10px 0px 10px;
+    }
+}

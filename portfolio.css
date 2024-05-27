@@ -1,0 +1,412 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background: url(bodybackground2.jpg) no-repeat;
+   background-size: 100% 100%;
+   background-position: center;
+}
+header{
+    width: 100%;
+    height: 300px;
+}
+
+
+header ul{
+    float: right;
+    list-style: none;
+    padding: 90px 50px;
+    margin-right: 70px;
+}
+header ul li{
+    display: inline-block;
+    padding: 20px 30px ;
+}
+header ul li:hover{
+    transition: .5s;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0), -1px -1px 5px rgb(0, 0, 0);
+}
+header ul li a{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: rgb(217, 217, 217);
+}
+#check{
+    display: none;
+}
+header label{
+    float: right;
+    font-size: 30px ;
+    margin-right: 40px;
+    margin-top: 50px;
+    display: none;
+    color: white;
+}
+
+
+
+.img{
+    padding: 120px 50px;
+    width: 100%;
+    height: 400px;
+    box-shadow: 3px 3px 20px black, -3px -3px 20px black
+}
+.img p{
+    font-weight: bold;
+    position: relative;
+    margin: 10px;
+    padding: 20px;
+    border-left: 2px solid white;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+@media (max-width:618px){
+    header ul{
+        background-color: white;
+        margin-top: 100px;
+        position: fixed;
+        right: -100%;
+        padding: 90px 30px;
+        margin-right: 0px;
+        box-shadow: 1px 1px 10px gray, -1px -1px 10px gray;
+    }
+    header ul li{
+        text-align: center;
+        display: block;
+    }
+    header label{
+        display: initial;
+    }
+    #check:checked ~ ul{
+        transition: .5s;
+        right: 0;
+    }
+    .img p{
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+section{
+    min-height: 600px;
+    width: 100%;
+    margin-top: 200px;
+    border-top: 2px solid black;
+}
+section .box1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 850px;
+    height: auto;
+    
+}
+section .box1 .box1_left{
+    border-top-left-radius: 30px;
+    padding: 10px;
+    width: 460px;
+    height: auto;
+    background-color: white;
+    box-shadow: 3px 3px 20px black, -3px -3px 20px black
+}
+section .box1 .box1_left .box1_img{
+    border-top-left-radius: 20px;
+    background: url(porfolio.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    z-index: 100;
+    transform: rotate(-3deg);
+}
+section .box1 .box1_right{
+    padding: 30px;
+    width: 40%;
+    height: auto;
+    color: white;
+    border-right: 7px solid white;
+}
+section .box1 .box1_right .credit{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+section .box1 .box1_right p{
+    padding: 10px;
+    text-align:justify;
+    line-height: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+
+
+
+
+section .box2{
+    float: right;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 20px;
+    width: 850px;
+    height: auto;
+}
+section .box2 .box2_left{
+    border-bottom-right-radius: 30px;
+    padding: 10px;
+    width: 460px;
+    height: auto;
+    background-color: white;
+    box-shadow: 3px 3px 20px black, -3px -3px 20px black
+}
+section .box2 .box2_left .box2_img{
+    border-bottom-right-radius: 20px;
+    background: url(portfolio3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 310px;
+    width: 100%;
+    z-index: 100;
+    transform: rotate(3deg);
+}
+section .box2 .box2_right{
+    padding: 30px;
+    width: 40%;
+    height: auto;
+    color: white;
+    border-left: 7px solid white;
+    
+}
+section .box2 .box2_right .credit{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+section .box2 .box2_right p{
+    padding: 10px;
+    text-align:justify;
+    line-height: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width:858px){
+    section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section .box1 .box1_right{
+        width: 80%;
+    }
+    section .box2 .box2_right{
+        width: 80%;
+    }
+}
+@media (max-width:502px){
+    section .box1{
+        margin: 10px;
+        width: 95%;
+    }
+    section .box2{
+        margin: 10px;
+        width: 95%;
+    }
+}
+
+
+
+
+
+
+
+
+
+.sec2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 200px;
+    width: 100%;
+    min-height: 700px;
+    padding: 20px;
+    justify-content: center;
+}
+.sec2 .sec2_box1{
+    margin: 60px 10px;
+    width: 250px;
+}
+.sec2 .sec2_box1 .img1{
+    border: 8px solid white;
+    width: 250px;
+    height: 400px;
+    background: url(portfolio6.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 20px black, -3px -3px 20px black;
+}
+.sec2 .sec2_box1 p{
+    padding: 20px;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sec2 .sec2_box2{
+    margin: 5px 10px;
+    width: 250px;
+}
+.sec2 .sec2_box2 .img1{
+    border: 8px solid white;
+    width: 250px;
+    height: 400px;
+    background: url(portfolio4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    box-shadow: 3px 3px 20px black, -3px -3px 20px black
+}
+.sec2 .sec2_box2 p{
+    padding: 20px;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sec2 .sec2_box3{
+    margin: 60px 10px;
+    width: 250px;
+}
+.sec2 .sec2_box3 .img1{
+    border:8px solid white;
+    width: 250px;
+    height: 400px;
+    background: url(porfolio2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 20px black, -3px -3px 20px black
+}
+.sec2 .sec2_box3 p{
+    padding: 20px;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sec2 .sec2_box4{
+    margin: 5px 10px;
+    width: 250px;
+}
+.sec2 .sec2_box4 .img1{
+    border: 8px solid white;
+    width: 250px;
+    height: 400px;
+    background: url(portfolio9.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    box-shadow: 3px 3px 20px black, -3px -3px 20px black
+}
+.sec2 .sec2_box4 p{
+    padding: 20px;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sec2 .textbox{
+    border-bottom: 5px solid white;
+    color: white;
+}
+.sec2 .textbox1{
+    border-top: 5px solid white;
+    color: white;
+}
+
+
+
+
+
+
+
+footer{
+    box-shadow: 2px 2px 10px black, -2px -2px 10px black;
+    justify-content: center;
+    padding: 20px;
+    
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer ul{
+    list-style: none;
+    width: 260px;
+}
+footer ul li{
+    
+    padding: 35px 0px;
+}
+footer ul li a{
+    
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(173, 173, 173);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+footer ul li a:hover{
+    transition: .5s;
+    color: white;
+}
+footer .icons{
+    
+    text-align: center;
+    width: 200px;
+    margin: 210px 10px 0px 10px;
+    padding: 20px;
+}
+footer .icons a{
+    
+    padding: 0px 10px 0px 10px;
+    font-size: 25px;
+}
+footer .icons a i{
+    
+    color: rgb(173, 173, 173);
+}
+footer .icons a i:hover{
+    color: white;
+    transition: .5s;
+}
+footer p{
+    color: rgb(173, 173, 173);
+    
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 210px 10px 0px 10px;
+    padding: 25px;
+}
+@media (max-width:1044px){
+    footer p{
+        margin: 20px 10px 0px 10px;
+    }
+}
+@media (max-width:561px){
+    footer .icons{
+        margin: 20px 10px 0px 10px;
+    }
+}
